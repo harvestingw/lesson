@@ -1,0 +1,60 @@
+/* 
+
+여기는 메인 스타일 시트입니다.
+
+작성자 : 이은성
+작성일자 : 2018-09-20
+*/
+
+
+h2{
+    font-size: 3rem;
+}
+
+main>h2{
+    color: rebeccapurple;
+}
+
+ul li{
+    color:coral;
+}
+
+ul li:first-child{
+    color:red;
+}
+
+main li{
+    font-size: 2rem;
+}
+
+#basket{
+    color: green;
+}
+
+.pocket{
+    color:yellow;
+}
+
+#basket+li{
+    color: black;
+}
+
+li{
+    background-color: white;
+}
+/* : pseudo class 수도 클래스 콜롬*/
+:not(li){
+    background-color: gray;
+}
+
+li:hover{
+    background-color: rgba(0,0,0,0.2)
+}
+
+[list]{
+    background-color: red;
+}
+
+[type='text']{
+    background-color: yellow;
+}
