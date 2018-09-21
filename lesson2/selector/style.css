@@ -42,6 +42,7 @@ main li{
 li{
     background-color: white;
 }
+
 /* : pseudo class 수도 클래스 콜롬*/
 :not(li){
     background-color: gray;
