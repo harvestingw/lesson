@@ -1,0 +1,168 @@
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+</head>
+
+<body>
+    <input type="text" id="user_input" value='안녕'>
+    <button onclick="me1()">버튼</button>
+
+    <script>
+        function me1() {
+            var a1 = document.getElementById('user_input').value;
+            alert(a1);
+        }
+
+        function me2(word) {
+            alert(word + "를 넣었어요.");
+        }
+
+        function me3(a, b) {
+            console.log(a * b);
+        }
+
+        function me4() {
+            me1();
+            me2("피카츄");
+        }
+
+        function me5(a, b) {
+            console.log(a + b);
+        }
+
+        function me6(a, b, c, d) {
+            return a + b + c + d;
+        }
+
+        function me7() {
+            var b1 = me6(1, 2, 3, 4);
+            return b1;
+        }
+
+        function pita(a, b) {
+            return Math.sqrt(Math.pow(a, 2) + Math.pow(b, 2));
+        }
+
+        function ne1(a, b) {
+            return a + b
+        }
+// (문자는 +는 되지만, -/*는 안된다.)
+
+        function ne2(a, b) {
+            return a - b
+        }
+        function ne3(a, b) {
+            return a * b
+        }
+
+/* console: ne3(1, 2)
+   = 3
+*/
+
+        function me1() {
+            var a1 = document.getElementById('user_input').value;
+            alert(a1);
+        }
+
+        function me2(word) {
+            alert(word + "를 넣었어요.");
+        }
+
+        function me3(a, b) {
+            console.log(a * b);
+        }
+
+        function me4() {
+            me1();
+            me2("피카츄");
+        }
+
+
+
+
+        // 문자열(string) 합성연습
+        function ko1(a) {
+            return a + "하다";
+        }
+
+
+
+        function ko3(a, b, c) {
+            return b + "는 " + c + "를 " + a + "하다" ;
+        }
+
+        // ko3(ko1('피카츄'), 'bye')
+
+        function je1(){
+            // let habbit_list = ['게임하기','산책하기','떡볶기 먹기']
+
+            // for (let index = 0; index < habbit_list.length; index++) {
+            //     const item = habbit_list[index];
+            //     console.log(item);
+            // }
+
+            var i = 0;
+            while(true){
+                i++;
+                console.log(i);
+                if (i > 100){
+                    break;
+                }
+            }
+        }
+
+//---------------------------------------------------------
+
+// <조건문> //
+        function je2(a) {
+            if(a === '지금 뭐해?'){
+                return "나 밥먹어";
+            } else if(a === '지금 어디야?'){
+                return "식당이야";
+            } else{
+                return "뭐라고?"
+            }
+        }
+
+        let my_body = [];
+
+        let toilet = [];
+
+
+        function eat(food) {
+            if(my_body.length >= 4){ // 조건문
+                console.log('나 음식 다 찼어.');
+                pup();
+                console.log('화장실 갔다왔어.');
+            }
+            my_body.push(food);
+        }
+
+
+
+        function pup() {
+            my_body.forEach(function (food){ // 리스트의 반복콜백함수(=종속절)
+                toilet.push(food);
+            });
+            my_body = [];
+        }
+
+        function areHungry() {
+            if(my_body.length < 1){
+                return "yes"
+            } else{
+                return my_body
+            }
+        }
+
+
+
+
+    </script>
+</body>
+
+</html>

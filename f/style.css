@@ -1,0 +1,25 @@
+/* 
+여기는 김시하의 스타일 시트입니다.
+*/
+
+h1{
+    background-color: brown;
+    text-align: center;
+    padding: 1rem;
+    text-decoration:currentColor;
+}
+
+span{
+    margin: 0%;
+    display: flex;
+    justify-content: space-around;
+    background-color: green
+}
+
+a{
+    color: aliceblue;
+}
+
+iframe{
+    padding: 6rem;
+}

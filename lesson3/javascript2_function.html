@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <style>
+        input{
+        width: 50px;
+    }
+    </style>
+</head>
+
+<body>
+    <input type="text" id='aa1'>
+    <input type="text" id='aa2'>
+    <input type="text" id='aa3'>
+    =
+    <input type="text" id='aa4'>
+    <br>
+    <button onclick="add()">더하기</button>
+    <button onclick="minus()">빼기</button>
+    <button onclick="time()">곱하기</button>
+
+    <script>
+        const q = function (id) {
+            return document.getElementById(id)
+        }
+
+        let a1 = document.getElementById('aa1');
+        let a2 = document.getElementById('aa2');
+        let a3 = document.getElementById('aa3');
+        let a4 = document.getElementById('aa4');
+
+        function add() {
+            a4.value = parseInt(a1.value) + parseInt(a2.value) + parseInt(a3.value);
+        }
+
+        function minus() {
+            a4.value = parseInt(a1.value) - parseInt(a2.value) - parseInt(a3.value);
+        }
+
+        function time() {
+            a4.value = parseInt(a1.value) * parseInt(a2.value) * parseInt(a3.value);
+        }
+
+
+    </script>
+
+</body>
+
+</html>
