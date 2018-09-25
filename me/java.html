@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+</head>
+
+<body>
+
+    <input type="text" id="user_input" value="안녕">
+    <button onclick="me1()">버튼</button>
+
+    <script>
+        function me1() {
+            var be1 = document.getElementById('user_input').value;
+            alert(be1);
+        }
+
+    function me2(word) {
+            return (word + "를 넣었어요");
+        }
+
+            function me3(a, b) {
+            console.log(a * b);
+        }
+
+
+        function me4() {
+            me1();
+            me2("너");
+        }
+
+        //       (=)
+        function me5(a, b) {
+            console.log(a + b);
+        }
+
+        function me6(a, b) {
+            console.log(a * b);
+        }
+
+        function me7(a, b, c, d) {
+            return a + b + c + d;
+        }
+
+        //       (=)
+
+        function me8() {
+            var be1 = me5(2, 2);
+            return be1;
+        }
+
+
+        function ja2(a) {
+            if(a === '뭐해?') {
+                return "밥먹어";
+            } else if (a === '뭐 먹는데?') {
+                return "된장국";
+            } else{
+                return "뭐라고?";
+            }
+        }
+
+
+        function am2(a) {
+            if(a === "뭐하냐?") {
+                return "밥 먹는다";
+            } else if(a === "뭐먹는데?") {
+                return "라면";
+            } else(a ==="맛있냐?") {
+                return "그럭저럭";
+            }
+        }
+
+
+
+    </script>
+
+</body>
+
+</html>
